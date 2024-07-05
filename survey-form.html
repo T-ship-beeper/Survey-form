@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MHL's Survey</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+<style>body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color:#D2B48C;
+  color: black;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+#title{
+  font-family: 'Tangerine', cursive; 
+  font-size: 45px; 
+  color: #6F4E37; 
+  text-shadow: 2px 2px 4px #FFF4E6; 
+   margin-bottom: 10px; 
+ 
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border: 5px solid #FFFDD0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+  background-color:#FFFDD0 ;
+  border: 1px solid #4A2C2A;
+  color: #ffffff;
+}
+button[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #805A3B;
+  border-color: white;
+  min-width: 300px;
+}
+
+fieldset{
+  margin-top:60px
+}
+button:hover{
+  background-color:#FFF4E6;
+}
+</style>
+
+  </head>
+  <body>
+    
+   <h1 id="title">Mocha Hazelnut Latte</h1> 
+   <p id="description">Please take some time to answer question on the new coffee and recieve your next coffee  on us&#9749; </p>
+   
+   <form id="survey-form">
+     <fieldset>
+     <label id="name-label">Name</label><input id="name" type="text" required placeholder="Emily">
+<label id="email-label">Email</label><input id="email" type="email" required placeholder="emily@gmail.com">
+<label id="number-label">Ticket Nr.</label> <input id="number" type="number" min="5" max="6" placeholder="23455">
+   
+   </fieldset>
+
+ <fieldset>
+     <label>Would you prefer the Mocha Hazelnut Latte to be?</label>
+     <select id="dropdown">
+       <option value="0"></option>       
+       <option value="1">Sweeter</option>
+       <option value="2">Less sweet</option>
+         <option value="3">As it is</option>
+           </select>
+   </fieldset>
+  
+ <fieldset>
+   <label>How would you rate the balance between chocolate and hazelnut flavors in the Mocha Hazelnut Latte?</label>
+<input type="radio" value="1" name="rate">0
+   <input type="radio" value="2" name="rate">1
+   <input type="radio" value="2" name="rate">2
+   <input type="radio" value="2" name="rate">3
+   <input type="radio" value="2" name="rate">4
+   <input type="radio" value="2" name="rate">5
+
+     
+     </fieldset>
+     <fieldset>
+       <label>Which of the following additional flavors or toppings would you be interested in adding to the Mocha Hazelnut Latte? (Select all that apply)</label>      
+        <input  type="checkbox" value="tea">Whipped cream
+ <input type="checkbox" value="coffee">Caramel drizzle
+  <input type="checkbox" value="coffee">Cinnamon
+   <input type="checkbox" value="coffee">Vanilla syrup
+    <input type="checkbox" value="coffee">Extra shot of espresso
+     <input type="checkbox" value="coffee">None
+      
+              </fieldset>
+              <fieldset>
+                <label>Do you have any suggestions for improving our Mocha Hazelnut Latte?</label>
+                <textarea placeholder="I really enjoy the Mocha Hazelnut Latte, but I think it could be even better with a touch of cinnamon to add some warmth and spice to the flavor profile" rows="5"></textarea>
+              </fieldset>
+              <button id="submit" type="submit">Submit</button
+
+
+   </form>
+  </body>
+
+</html>
